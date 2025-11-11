@@ -1,0 +1,42 @@
+{
+  "name": "pingbuoy",
+  "version": "1.0.0",
+  "description": "Official JavaScript/TypeScript SDK for PingBuoy website monitoring API",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Tests coming soon\" && exit 0"
+  },
+  "keywords": [
+    "pingbuoy",
+    "monitoring",
+    "uptime",
+    "website-monitoring",
+    "api-client",
+    "sdk"
+  ],
+  "author": "PingBuoy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rosalindgash/pingbuoy-sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/rosalindgash/pingbuoy-sdk/issues"
+  },
+  "homepage": "https://pingbuoy.com",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
